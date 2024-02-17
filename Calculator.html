@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            height: 500px;
+            width: 350px;
+            border: 2px solid rgb(160, 156, 156);
+            box-shadow: 1px 1px 2px 0px;
+            background-color: antiquewhite;
+           
+        }
+       #num{
+         margin-left: 25px;
+        margin-top: 20px; 
+        padding: 10px;
+        width: 80%;
+        font-size: 20px;
+       }
+       .btn-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+       }
+       .btn{
+        height: 30px;
+        width: 70px;
+        margin: 8px;
+        
+           }
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+          <input type="text" name="input" id="num">
+         <div class="btn-container">
+            <button class="btn btn1">C</button>
+            <button class="btn btn2">1</button>
+            <button class="btn btn3">2</button>
+            <button class="btn btn4">3</button>
+            <button class="btn btn5">*</button>
+            <button class="btn btn6">4</button>
+            <button class="btn btn7">5</button>
+            <button class="btn btn8">6</button>
+            <button class="btn btn9">+</button>
+            <button class="btn btn10">7</button>
+            <button class="btn btn11" >8</button>
+            <button class="btn btn12">9</button>
+            <button class="btn btn13">-</button>
+            <button class="btn btn14">/</button>
+            <button class="btn btn15">.</button>
+            <button class="btn btn16">=</button>
+            <button class="btn btn17">0</button>
+          
+         </div>
+    </div>
+    <script>
+        let currentValue='';
+    let input= document.querySelector("#num").value=currentValue;
+    let btn1=document.querySelector(".btn1");
+    let btn2=document.querySelector(".btn2");
+    let btn3=document.querySelector(".btn3");
+    let btn4=document.querySelector(".btn4");
+    let btn5=document.querySelector(".btn5");
+    let btn6=document.querySelector(".btn6");
+    let btn7=document.querySelector(".btn7");
+    let btn8=document.querySelector(".btn8");
+    let btn9=document.querySelector(".btn9");
+    let btn10=document.querySelector(".btn10");
+    let btn11=document.querySelector(".btn11");
+    let btn12=document.querySelector(".btn12");
+    let btn13=document.querySelector(".btn13");
+    let btn14=document.querySelector(".btn14");
+    let btn15=document.querySelector(".btn15");
+    let btn16=document.querySelector(".btn16");
+    let btn17=document.querySelector(".btn17");
+
+    btn1.addEventListener("click" ,myclick);
+    function myclick(){
+        currentValue=currentValue + '';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn2.addEventListener("click" ,myclick1);
+    function myclick1(){
+        currentValue=currentValue + '1';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn3.addEventListener("click" ,myclick2);
+    function myclick2(){
+        currentValue=currentValue + '2';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn4.addEventListener("click" ,myclick4);
+    function myclick4(){
+        currentValue=currentValue + '3';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn5.addEventListener("click" ,myclick5);
+    function myclick5(){
+        currentValue=currentValue + '*';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn6.addEventListener("click" ,myclick6);
+    function myclick6(){
+        currentValue=currentValue + '4';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    
+    btn7.addEventListener("click" ,myclick7);
+    function myclick7(){
+        currentValue=currentValue + '5';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn8.addEventListener("click" ,myclick8);
+    function myclick8(){
+        currentValue=currentValue + '6';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn9.addEventListener("click" ,myclick9);
+    function myclick9(){
+        currentValue=currentValue + '+';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn10.addEventListener("click" ,myclick10);
+    function myclick10(){
+        currentValue=currentValue + '7';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn11.addEventListener("click" ,myclick11);
+    function myclick11(){
+        currentValue=currentValue + '8';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn12.addEventListener("click" ,myclick12);
+    function myclick12(){
+        currentValue=currentValue + '9';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn13.addEventListener("click" ,myclick13);
+    function myclick13(){
+        currentValue=currentValue + '-';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn14.addEventListener("click" ,myclick14);
+    function myclick14(){
+        currentValue=currentValue + '/';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn15.addEventListener("click" ,myclick15);
+    function myclick15(){
+        currentValue=currentValue + '.';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn16.addEventListener("click" ,myclick16);
+    function myclick16(){
+        currentValue=eval(currentValue);
+        let input= document.querySelector("#num").value=currentValue;
+    }
+    btn17.addEventListener("click" ,myclick17);
+    function myclick17(){
+        currentValue=currentValue + '0';
+        let input= document.querySelector("#num").value=currentValue;
+    }
+  
+
+    
+
+    
+
+
+    </script>
+</body>
+</html>
